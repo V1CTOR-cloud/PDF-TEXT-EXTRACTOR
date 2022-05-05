@@ -88,7 +88,7 @@
                 }).then(function(textContent) {
                     // Assign CSS to the textLayer element
                     var textLayer = document.querySelector(".textLayer");
-
+                    textLayer.textContent = "";
                     // Pass the data to the method for rendering of text over the pdf canvas.
                     pdfjsLib.renderTextLayer({
                         textContent: textContent,
